@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        table{
+            border: solid;
+            border-radius: 20px;
+
+
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        td,tr{
+            border: solid;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Tic Tac Toe</h1>
+    <div class="tic">
+        <table>
+<tr>
+    <td>
+        <img id="one" onclick="game(this.id)" src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="two"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="three"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+</tr>
+<tr>
+    <td>
+        <img id="four"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="five"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="six"onclick="game(this.id)" src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+</tr>
+<tr>
+    <td>
+        <img id="seven"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="eight"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+    <td>
+        <img id="nine"onclick="game(this.id)"src="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0">
+    </td>
+</tr>
+        </table>
+    </div>
+
+</center>
+<script>
+    let press=1
+    let p="https://th.bing.com/th/id/R.a6a3627851b30966618d8dd9b31a318e?rik=nrsTtRKrtfXZ0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2ff%2fb%2f539866.jpg&ehk=KX1PeOPdvFG34ze0Cj3PFcNGM8M3Z3Kec1RXmf8Jask%3d&risl=&pid=ImgRaw&r=0"
+    function game(box){
+    let play=document.getElementById(box).src
+ if (play==p){
+
+
+    if(press %2==0){
+
+   
+    document.getElementById(box).src="https://clipartcraft.com/images/transparent-x-tic-tac-toe.png"
+}
+else{
+    document.getElementById(box).src="https://www.freeiconspng.com/uploads/circle-icon-22.png"
+}
+press=press+1
+}
+}
+</script>
+</body>
+</html>
